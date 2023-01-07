@@ -1,0 +1,319 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Gainzvilla - Fitness &amp; Nutrition
+    //
+      - favicon
+    link(rel='shortcut icon', href='./favicon.svg', type='image/svg+xml')
+    //
+      - custom css link
+    link(rel='stylesheet', href='./assets/css/style.css')
+    //
+      - google font link
+    link(rel='preconnect', href='https://fonts.googleapis.com')
+    link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap', rel='stylesheet')
+  body#top
+    //
+      - #HEADER
+    header.header(data-header='')
+      .container
+        a.logo(href='#')
+          | Gainzvilla
+          span.span .
+        nav.navbar(data-navbar='')
+          button.nav-toggle-btn(aria-label='close menu', data-nav-toggler='')
+            ion-icon(name='close-outline', aria-hidden='true')
+          ul.navbar-list
+            li.navbar-item
+              a.navbar-link(href='#home', data-nav-link='') Home
+            li.navbar-item
+              a.navbar-link(href='#about', data-nav-link='') About Us
+            li.navbar-item
+              a.navbar-link(href='#course', data-nav-link='') All Course
+            li.navbar-item
+              a.navbar-link(href='#blog', data-nav-link='') Blog
+            li.navbar-item
+              a.navbar-link(href='#', data-nav-link='') Contact
+        a.btn.btn-primary(href='#') Sign Up
+        button.nav-toggle-btn(aria-label='open manu', data-nav-toggler='')
+          ion-icon(name='menu-outline', aria-hidden='true')
+        .overlay(data-nav-toggler='', data-overlay='')
+    main
+      article
+        //
+          - #HERO
+        section#home.section.hero(aria-label='hero', data-section='', style="background-image: url('./assets/images/hero-banner.jpg')")
+          .container
+            p.hero-subtitle Fitness &amp; Nutrition
+            h1.h1.hero-title Elevate your fitness game
+            p.hero-text
+              | Making gains, one meal at a time.
+            a.btn.btn-secondary(href='form.html') Start Course
+            .social-wrapper
+              p.social-title Connect with us:
+              ul.social-list
+                li
+                  a.social-link(href='#')
+                    ion-icon(name='logo-facebook')
+                li
+                  a.social-link(href='#')
+                    ion-icon(name='logo-skype')
+                li
+                  a.social-link(href='#')
+                    ion-icon(name='logo-twitter')
+                li
+                  a.social-link(href='#')
+                    ion-icon(name='logo-linkedin')
+        //
+          - #SERVICE
+        section.section.service(aria-label='service', data-section='')
+          .container
+            ul.grid-list
+              li
+                .service-card
+                  .card-icon
+                    img(src='./assets/images/service-1.svg', width='60', height='60', loading='lazy', alt='Workout Plan')
+                  h3.h3
+                    a.card-title(href='#') Workout Plan
+                  p.card-text
+                    | Lorem Ipsum is simply dummy themes industryes psum has been them industry the loep into type setting.
+                  a.btn.btn-secondary(href='#')
+                    ion-icon(name='arrow-forward')
+              li
+                .service-card.active
+                  .card-icon
+                    img(src='./assets/images/service-2.svg', width='60', height='60', loading='lazy', alt='Healthy Indian Diet Plan')
+                  h3.h3
+                    a.card-title(href='#') Healthy Indian Diet Plan
+                  p.card-text
+                    | Lorem Ipsum is simply dummy themes industryes psum has been them industry the loep into type setting.
+                  a.btn.btn-secondary(href='#')
+                    ion-icon(name='arrow-forward')
+              li
+                .service-card
+                  .card-icon
+                    img(src='./assets/images/service-3.svg', width='60', height='60', loading='lazy', alt='Bonus with the plan')
+                  h3.h3
+                    a.card-title(href='#') Bonus with the plan
+                  p.card-text
+                    | Lorem Ipsum is simply dummy themes industryes psum has been them industry the loep into type setting.
+                  a.btn.btn-secondary(href='#')
+                    ion-icon(name='arrow-forward')
+        //
+          - #ABOUT
+        section#about.section.about(aria-label='about', data-section='')
+          .container
+            .about-banner.img-holder(style='--width: 470; --height: 580;')
+              img.img-cover(src='./assets/images/about-banner.jpg', width='470', height='580', loading='lazy', alt='about banner')
+              a.btn.btn-secondary(href='#') Meet Instructor
+            .about-content
+              p.section-subtitle 25+ Years Of Experience
+              h2.h2.section-title We have expert instructor for help our students.
+              p.section-text
+                | Lorem Ipsum is simply dummy text the printing and typesetting standard dummy text ever since the 150 when
+                | an unknown
+                | printe specimen book has survived centuries.
+              h3.about-h3 100+ Courses
+              p.section-text
+                | Lorem Ipsum is simply dummy text the printing and typesetting standard dummy text ever since the 150 when
+                | an unknown
+                | printe specimen book has survived centuries.
+        //
+          - #COURSE
+        section#course.section.course(aria-label='course', data-section='')
+          .container
+            .title-wrapper
+              p.section-subtitle 100+ Courses Available
+              h2.h2.section-title Fitness &amp; Nutrition Courses
+            ul.grid-list
+              li
+                .course-card
+                  figure.card-banner.img-holder(style='--width: 350; --height: 300;')
+                    img.img-cover(src='./assets/images/courses-1.jpg', width='350', height='300', loading='lazy', alt='Children Nutrition and Cooking')
+                  .card-content
+                    data.card-price(value='98') $98
+                    p.card-author
+                      a.card-link(href='#')
+                        | By: 
+                        span.span Ryan Patterson
+                    h3.h3
+                      a.card-title(href='#') Children Nutrition and Cooking
+                    ul.card-meta-list
+                      li.card-meta-item
+                        time(datetime='PT8H20M') 08 hr 20 mins
+                      li.card-meta-item
+                        p.card-meta-text 28 Lectures
+              li
+                .course-card
+                  figure.card-banner.img-holder(style='--width: 350; --height: 300;')
+                    img.img-cover(src='./assets/images/courses-2.jpg', width='350', height='300', loading='lazy', alt='Introduction to Food and Health.')
+                  .card-content
+                    data.card-price(value='72') $72
+                    p.card-author
+                      a.card-link(href='#')
+                        | By: 
+                        span.span Arlene Daniels
+                    h3.h3
+                      a.card-title(href='#') Introduction to Food and Health.
+                    ul.card-meta-list
+                      li.card-meta-item
+                        time(datetime='PT9H25M') 09 hr 25 mins
+                      li.card-meta-item
+                        p.card-meta-text 16 Lectures
+              li
+                .course-card
+                  figure.card-banner.img-holder(style='--width: 350; --height: 300;')
+                    img.img-cover(src='./assets/images/courses-3.jpg', width='350', height='300', loading='lazy', alt='Nutrition and Lifestyle in Pregnancy')
+                  .card-content
+                    data.card-price(value='68') $68
+                    p.card-author
+                      a.card-link(href='#')
+                        | By: 
+                        span.span Selina Benton
+                    h3.h3
+                      a.card-title(href='#') Nutrition and Lifestyle in Pregnancy
+                    ul.card-meta-list
+                      li.card-meta-item
+                        time(datetime='PT3H38M') 03 hr 38 mins
+                      li.card-meta-item
+                        p.card-meta-text 18 Lectures
+              li
+                .course-card
+                  figure.card-banner.img-holder(style='--width: 350; --height: 300;')
+                    img.img-cover(src='./assets/images/courses-4.jpg', width='350', height='300', loading='lazy', alt='Expertise on Fitness, Nutrition and Health')
+                  .card-content
+                    data.card-price(value='98') $98
+                    p.card-author
+                      a.card-link(href='#')
+                        | By: 
+                        span.span Ryan Patterson
+                    h3.h3
+                      a.card-title(href='#') Expertise on Fitness, Nutrition and Health
+                    ul.card-meta-list
+                      li.card-meta-item
+                        time(datetime='PT2H16M') 02 hr 16 mins
+                      li.card-meta-item
+                        p.card-meta-text 14 Lectures
+              li
+                .course-card
+                  figure.card-banner.img-holder(style='--width: 350; --height: 300;')
+                    img.img-cover(src='./assets/images/courses-5.jpg', width='350', height='300', loading='lazy', alt='Hacking exercise for health new science of fitness')
+                  .card-content
+                    data.card-price(value='72') $72
+                    p.card-author
+                      a.card-link(href='#')
+                        | By: 
+                        span.span Arlene Daniels
+                    h3.h3
+                      a.card-title(href='#') Hacking exercise for health new science of fitness
+                    ul.card-meta-list
+                      li.card-meta-item
+                        time(datetime='PT6H12M') 06 hr 12 mins
+                      li.card-meta-item
+                        p.card-meta-text 35 Lectures
+              li
+                .course-card
+                  figure.card-banner.img-holder(style='--width: 350; --height: 300;')
+                    img.img-cover(src='./assets/images/courses-6.jpg', width='350', height='300', loading='lazy', alt='Designing Your Personal Weight Loss Plan')
+                  .card-content
+                    data.card-price(value='68') $68
+                    p.card-author
+                      a.card-link(href='#')
+                        | By: 
+                        span.span Selina Benton
+                    h3.h3
+                      a.card-title(href='#') Designing Your Personal Weight Loss Plan
+                    ul.card-meta-list
+                      li.card-meta-item
+                        time(datetime='PT9H34M') 09 hr 34 mins
+                      li.card-meta-item
+                        p.card-meta-text 28 Lectures
+        //
+          - #BLOG
+        section#blog.section.blog(aria-label='blog', data-section='')
+          .container
+            .title-wrapper
+              p.section-subtitle Our Blog Post
+              h2.h2.section-title Latest Article of Nutrition
+            ul.grid-list
+              li
+                .blog-card
+                  .wrapper
+                    time.publish-date(datetime='2022-02-24')
+                      span.span 24
+                      |  Feb
+                    div
+                      .card-author
+                        a.card-link(href='#')
+                          | By: 
+                          span.span Maddie Rife
+                      ul.card-meta-list
+                        li.card-meta-item
+                          p.item-text 87 Likes
+                        li.card-meta-item
+                          p.item-text 58 Share
+                  h3.h3
+                    a.card-title(href='#') It was popularised sheets the release contain
+                  p.card-text
+                    | Lorem sum same dummy text theme industry psum have been them industry the leaf into type setting.
+              li
+                .blog-card
+                  .wrapper
+                    time.publish-date(datetime='2022-02-24')
+                      span.span 24
+                      |  Feb
+                    div
+                      .card-author
+                        a.card-link(href='#')
+                          | By: 
+                          span.span Maddie Rife
+                      ul.card-meta-list
+                        li.card-meta-item
+                          p.item-text 87 Likes
+                        li.card-meta-item
+                          p.item-text 58 Share
+                  h3.h3
+                    a.card-title(href='#') It was popularised sheets the release contain
+                  p.card-text
+                    | Lorem sum same dummy text theme industry psum have been them industry the leaf into type setting.
+              li
+                .blog-card
+                  .wrapper
+                    time.publish-date(datetime='2022-02-24')
+                      span.span 24
+                      |  Feb
+                    div
+                      .card-author
+                        a.card-link(href='#')
+                          | By: 
+                          span.span Maddie Rife
+                      ul.card-meta-list
+                        li.card-meta-item
+                          p.item-text 87 Likes
+                        li.card-meta-item
+                          p.item-text 58 Share
+                  h3.h3
+                    a.card-title(href='#') It was popularised sheets the release contain
+                  p.card-text
+                    | Lorem sum same dummy text theme industry psum have been them industry the leaf into type setting.
+        //
+          - #APP
+        section.section.app(aria-label='app', data-section='')
+          .container
+            .app-card
+              p.section-subtitle Mobile App Available
+              h2.h2.section-title
+                | Download our mobile app.
+                br
+                            and start coaching anytime.
+              .wrapper
+                a.app-link(href='#', aria-label='play store')
+                  img.img(src='./assets/images/play-store.jpg', width='134', height='38', loading='lazy', alt='Play Store')
+                a.app-link(href='#', aria-label='app store')
+                  img.img(src='./assets/images/app-store.jpg', width='132', height='38', loading='lazy', alt='App Store')
+    //
+ 
